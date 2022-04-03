@@ -1,0 +1,44 @@
+@import 'config';
+@import 'menu';
+@import 'home';
+@import 'pricelist';
+@import 'gallery';
+@import 'contact';
+@import 'location';
+@import 'footer';
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+img {
+    @include slowAnimation;
+    // position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        @include slowAnimation;
+        opacity: 0.8;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        filter: sepia(50%);
+        transform: scale(1.5);
+        cursor: pointer;
+      }
+}

@@ -1,0 +1,56 @@
+.contact {
+    width: 100%;
+    background-color: #fff;
+
+    &-header-container {
+        @extend .price-list-header-container;
+    }
+
+    &-header {
+        @extend .price-list-header;
+    }
+
+    &-container {
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // padding-top: 3em;
+        padding-bottom: 4em;
+        gap: 1.5rem;
+
+        &-mobile {
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+            gap: 2rem;
+            font-size: 1.3rem;
+        }
+
+        &-facebook {
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+            gap: 2rem;
+            font-size: 1.3rem;
+        }
+
+        &-instagram {
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+            gap: 2rem;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.fb, .ig, .mobile {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+
+    &:hover {
+        color: black;
+    }
+}
