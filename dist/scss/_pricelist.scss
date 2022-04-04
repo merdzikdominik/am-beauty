@@ -14,8 +14,9 @@
         rgba(239,239,239,1) 100%);
         padding: 4em;
         display: flex;
-        justify-content: space-between;
-        // align-items: center;
+        // justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         position: relative;
         z-index: 1;
     }
@@ -96,8 +97,9 @@
 
 @media (min-width: 670px) {
     .price-list-header-container {
-        display: flex;
-        align-items: center;
+        // display: flex;
+        // align-items: center;
+        justify-content: space-between;
     }
     
     .price-list-container {
