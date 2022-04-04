@@ -253,8 +253,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  top: 8rem;
   z-index: 998;
 }
 
@@ -283,7 +281,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
   text-align: left;
-  padding-left: 3rem;
+  padding: 5em 0 0 3rem;
 }
 
 .home-information-description {
@@ -304,14 +302,11 @@
 @media (min-width: 670px) {
   .home {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("/dist/assets/img/hands-bg3.jpg");
     background-position: unset;
     background-size: cover;
     background-repeat: no-repeat;
-  }
-  .home-information {
-    padding: 20rem 0 0 0;
   }
   .home-information-description {
     width: 60%;
@@ -628,7 +623,7 @@
     display: -ms-grid;
     display: grid;
     padding: 2rem;
-    grid-template: "header header header header header" 24% "main main main main main" 24% "down-main down-main down-main down-main down-main" 23% "footer footer footer footer footer" 23% / auto auto auto auto auto;
+    grid-template: "header header header header header" 24% "main main main main main" 24% "down-main down-main down-main down-main down-main" 23% "footer footer footer footer footer" 23% / auto auto auto auto auto;
     grid-gap: 2%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
