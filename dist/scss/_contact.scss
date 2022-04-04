@@ -10,6 +10,10 @@
         @extend .price-list-header;
     }
 
+    &-splash {
+        display: none;
+    }
+
     &-container {
         display: grid;
         flex-direction: column;
@@ -52,5 +56,16 @@
 
     &:hover {
         color: black;
+    }
+}
+
+
+@media (min-width: 670px) {
+    .contact-splash {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        justify-content: left;
+        pointer-events: none;
     }
 }

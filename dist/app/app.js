@@ -102,4 +102,4 @@ ScrollReveal().reveal('.contact-container-instagram', {interval: 150, origin: 'l
 
 const priceList = document.querySelector('.price-list');
 // { behavior: 'smooth', block: 'nearest', inline: 'start' }
-priceList.scrollIntoView();
+priceList.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
