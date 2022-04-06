@@ -88,18 +88,34 @@ ScrollReveal().reveal('.contact-container-instagram', {interval: 150, origin: 'l
 
 // const scroll = new SmoothScroll('.desktop-menu a[href*="#"]');
 
-// const allLinks = document.querySelectorAll('a');
+const allLinks = document.querySelectorAll('a');
+// const activeLinkClassName = selectedLink.getAttribute('data-link');
+// const activeLink = document.querySelector('.' + activeLinkClassName);
 
-// allLinks.forEach(selectedLink => selectedLink.addEventListener('click', () => {
-//     const activeLinkClassName = selectedLink.getAttribute('data-link');
-//     const activeLink = document.querySelector('.' + activeLinkClassName);
+allLinks.forEach(selectedLink => selectedLink.addEventListener('click', () => {
+    const activeLinkClassName = selectedLink.getAttribute('data-link');
+    const activeLink = document.querySelector('.' + activeLinkClassName);
 
-//     // const header = document.querySelector('.price-list-header');
+    // activeLink.scrollIntoView({behavior: "smooth"});
+    document.documentElement.scrollTo(0, 250);
 
-//     // console.log(headersasd);
-//     // activeLink.scrollIntoView({behavior: "smooth", block: "start"});
-// }));
+    // console.log(typeof(activeLink));
+    // const gal = document.querySelector('.gallery');
+    // gal.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+    // window.scroll({top: activeLink.offsetTop, behavior: "smooth", block: "start"});
+    // window.scroll({top: activeLink.offsetTop});
 
-const priceList = document.querySelector('.price-list');
+}));
+
+
+// const priceList = document.querySelector('.price-list-header');
+// priceList.scrollIntoView(true);
+
+// console.log(priceList);
+// priceList.scrollIntoView(behavior: 'smooth', inline: 'start');
+
 // { behavior: 'smooth', block: 'nearest', inline: 'start' }
-priceList.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+// priceList.scrollIntoView();
+
+// const element = document.querySelector(".price-list");
+// window.scroll({top: element.offsetTop, behavior: "smooth"});
