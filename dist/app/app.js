@@ -84,38 +84,13 @@ ScrollReveal().reveal('.contact-container-mobile', {interval: 50, origin: 'left'
 ScrollReveal().reveal('.contact-container-facebook', {interval: 100, origin: 'left', delay: 100, distance: "200px"});
 ScrollReveal().reveal('.contact-container-instagram', {interval: 150, origin: 'left', delay: 150, distance: "200px"});
 
-// scrolling down animation
-
-// const scroll = new SmoothScroll('.desktop-menu a[href*="#"]');
+// scrolling the website animation
 
 const allLinks = document.querySelectorAll('a');
-// const activeLinkClassName = selectedLink.getAttribute('data-link');
-// const activeLink = document.querySelector('.' + activeLinkClassName);
 
 allLinks.forEach(selectedLink => selectedLink.addEventListener('click', () => {
     const activeLinkClassName = selectedLink.getAttribute('data-link');
     const activeLink = document.querySelector('.' + activeLinkClassName);
 
-    // activeLink.scrollIntoView({behavior: "smooth"});
-    document.documentElement.scrollTo(0, 250);
-
-    // console.log(typeof(activeLink));
-    // const gal = document.querySelector('.gallery');
-    // gal.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
-    // window.scroll({top: activeLink.offsetTop, behavior: "smooth", block: "start"});
-    // window.scroll({top: activeLink.offsetTop});
-
+    activeLink.scrollIntoView({behavior: "smooth"});
 }));
-
-
-// const priceList = document.querySelector('.price-list-header');
-// priceList.scrollIntoView(true);
-
-// console.log(priceList);
-// priceList.scrollIntoView(behavior: 'smooth', inline: 'start');
-
-// { behavior: 'smooth', block: 'nearest', inline: 'start' }
-// priceList.scrollIntoView();
-
-// const element = document.querySelector(".price-list");
-// window.scroll({top: element.offsetTop, behavior: "smooth"});
