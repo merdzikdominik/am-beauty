@@ -95,11 +95,3 @@ allLinks.forEach(selectedLink => selectedLink.addEventListener('click', () => {
     activeLink.scrollIntoView({behavior: "smooth"});
 }));
 
-const grnBtn = document.querySelector('button');
-
-grnBtn.addEventListener('click', () => {
-    const priceList = document.querySelector('.price-list');
-    // priceList.scrollIntoView({ behavior: 'smooth' });
-    console.log(priceList);
-})
-
