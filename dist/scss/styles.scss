@@ -24,14 +24,16 @@ html, body {
 }
 
 img {
-    @include slowAnimation;
+    // @include slowAnimation;
     // position: relative;
     width: 100%;
     height: 100%;
-    transition: all 0.3s ease-out;
+    // transition: all 0.3s ease-out;
+    object-fit: cover;
+    object-position: center;
 
     &:hover {
-        @include slowAnimation;
+        // @include slowAnimation;
         opacity: 0.8;
         width: 100%;
         height: 100%;
