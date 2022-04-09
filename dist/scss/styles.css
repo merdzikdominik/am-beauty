@@ -309,6 +309,9 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .home-information-description {
+    width: 70%;
+  }
   .home-information-name {
     padding: 8em 0 0 1em;
   }
@@ -321,7 +324,6 @@
 
 .price-list-header-container, .gallery-header-container, .contact-header-container {
   width: 100%;
-  background: white;
   background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(70%, #ebebeb), to(#efefef));
   background: linear-gradient(0deg, white 0%, #ebebeb 70%, #efefef 100%);
   padding: 4em;
@@ -352,16 +354,12 @@
 }
 
 .price-list-container-title {
-  padding-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .price-list-container-title hr {
@@ -373,14 +371,7 @@
 .price-list-container .nails-title {
   font-family: 'Poppins', sans-serif;
   padding: 0 3em;
-  margin: 0;
-}
-
-.price-list .nails-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: block;
+  text-align: center;
 }
 
 .price-list .list-element {
@@ -393,19 +384,19 @@
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
-  padding: 1rem 0;
+  padding: 1em 0;
 }
 
 .price-list .list-element-price {
   font-weight: bold;
   white-space: nowrap;
   margin-bottom: 0;
-  padding: 1rem 0;
+  padding: 1em 0;
 }
 
 .price-list .list-element-service {
   margin-bottom: 0;
-  padding: 1rem 0;
+  padding: 1em 0;
 }
 
 @media (min-width: 670px) {
