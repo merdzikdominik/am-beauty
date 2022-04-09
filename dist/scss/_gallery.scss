@@ -2,7 +2,6 @@
     width: 100%;
     position: relative;
     background-color: #efefef;
-    overflow: hidden;
 
     &-header-container {
         @extend .price-list-header-container;
@@ -29,6 +28,8 @@
     &-main-container {
         padding: 0 0.5em;
         margin: 0 auto;
+        position: relative;
+        z-index: 990;
     }
 
     &-container {
@@ -37,6 +38,8 @@
         grid-template-rows: repeat(10, 10%);
         gap: 0.5em;
         margin: 0;
+        // position: relative;
+        // z-index: 990;
         // padding: 5em 0;
 
         &-element {

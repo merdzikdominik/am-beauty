@@ -4,6 +4,7 @@
 
     &-header-container {
         @extend .price-list-header-container;
+        padding: 8em 4em 4em 4em;
     }
 
     &-header {
@@ -67,5 +68,9 @@
         height: fit-content;
         justify-content: left;
         pointer-events: none;
+    }
+
+    .contact-header-container {
+        padding: 4em;
     }
 }

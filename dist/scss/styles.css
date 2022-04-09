@@ -262,7 +262,7 @@
   list-style-type: none;
   font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
-  padding: 0 0 0 3rem;
+  padding: 0 0 0 2.4em;
   text-align: left;
   line-height: 3rem;
 }
@@ -274,30 +274,29 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1rem;
+  gap: 1em;
   word-wrap: nowrap;
 }
 
 .home-information-name {
-  width: 90%;
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
   text-align: left;
-  padding: 8em 0 0 3rem;
+  padding: 4em 1em 0 1em;
 }
 
 .home-information-description {
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
   text-align: left;
-  padding: 3rem;
+  padding: 2em;
 }
 
 .horizontal-purple-line {
   position: relative;
-  left: 3rem;
-  width: 10rem;
-  height: 3px;
+  left: 2.6em;
+  width: 10em;
+  height: 0.2em;
   background-color: #d387ab;
 }
 
@@ -310,8 +309,8 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .home-information-description {
-    width: 60%;
+  .home-information-name {
+    padding: 8em 0 0 1em;
   }
 }
 
@@ -340,12 +339,10 @@
 }
 
 .price-list-header, .gallery-header, .contact-header {
-  font-size: 60px;
+  font-size: 4rem;
   font-family: 'Poppins', sans-serif;
-  letter-spacing: 5px;
+  letter-spacing: 0.5rem;
   border-bottom: 2px solid #d387ab;
-  display: inline-block;
-  text-align: center;
   margin: 0 auto;
 }
 
@@ -368,16 +365,14 @@
 }
 
 .price-list-container-title hr {
-  height: 1.3px;
+  height: 0.1em;
   width: 70%;
   background-color: black;
-  border-radius: 10px;
 }
 
 .price-list-container .nails-title {
   font-family: 'Poppins', sans-serif;
-  text-align: center;
-  padding: 0 4rem;
+  padding: 0 3em;
   margin: 0;
 }
 
@@ -432,7 +427,6 @@
   width: 100%;
   position: relative;
   background-color: #efefef;
-  overflow: hidden;
 }
 
 .gallery-header-container {
@@ -452,6 +446,8 @@
 .gallery-main-container {
   padding: 0 0.5em;
   margin: 0 auto;
+  position: relative;
+  z-index: 990;
 }
 
 .gallery-container {
@@ -677,6 +673,10 @@
   background-color: #fff;
 }
 
+.contact-header-container {
+  padding: 8em 4em 4em 4em;
+}
+
 .contact-splash {
   display: none;
 }
@@ -758,6 +758,9 @@
             justify-content: left;
     pointer-events: none;
   }
+  .contact-header-container {
+    padding: 4em;
+  }
 }
 
 .location, .mapouter, .gmap_canvas {
@@ -811,12 +814,8 @@ html, body {
 }
 
 img {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   width: 100%;
   height: 100%;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -824,8 +823,6 @@ img {
 }
 
 img:hover {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   opacity: 0.8;
   width: 100%;
   height: 100%;

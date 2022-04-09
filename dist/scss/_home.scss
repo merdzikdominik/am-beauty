@@ -15,40 +15,40 @@
             list-style-type: none;
             font-family: 'Poppins', sans-serif;
             font-size: 1.1rem;
-            padding: 0 0 0 3rem;
+            padding: 0 0 0 2.4em;
             text-align: left;
             line-height: 3rem;
 
             &-type {
                 display: flex;
                 align-items: center;
-                gap: 1rem;
+                gap: 1em;
                 word-wrap: nowrap;
             }
         }
 
         &-name {
-            width: 90%;
+            // width: 90%;
             font-family: 'Poppins', sans-serif;
             font-size: 2.5rem;
             text-align: left;
-            padding: 8em 0 0 3rem;
+            padding: 4em 1em 0 1em;
         }
 
         &-description {
             font-family: 'Poppins', sans-serif;
             font-size: 1.3rem;
             text-align: left;
-            padding: 3rem;
+            padding: 2em;
         }
     }
 }
 
 .horizontal-purple-line {
     position: relative;
-    left: 3rem;
-    width: 10rem;
-    height: 3px;
+    left: 2.6em;
+    width: 10em;
+    height: 0.2em;
     background-color: #d387ab;
 }
 
@@ -63,7 +63,8 @@
         background-repeat: no-repeat;
     }
 
-    .home-information-description {
-        width: 60%;
+    .home-information-name {
+        padding: 8em 0 0 1em;
     }
+
 }
