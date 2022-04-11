@@ -247,6 +247,10 @@
   background-color: #efefef;
   width: 100%;
   min-height: 100vh;
+  background-image: url("/dist/assets/img/hands-bg3.jpg");
+  background-position: unset;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .home-information {
@@ -301,16 +305,11 @@
 }
 
 @media (min-width: 670px) {
-  .home {
-    width: 100%;
-    min-height: 100vh;
-    background-image: url("/dist/assets/img/hands-bg3.jpg");
-    background-position: unset;
-    background-size: cover;
-    background-repeat: no-repeat;
+  .home-information {
+    width: 70%;
   }
   .home-information-description {
-    width: 70%;
+    padding: 2em 3em 2em 2em;
   }
   .home-information-name {
     padding: 8em 0 0 1em;
@@ -322,7 +321,7 @@
   background-color: #fff;
 }
 
-.price-list-header-container, .gallery-header-container, .contact-header-container {
+.price-list-header-container {
   width: 100%;
   background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(70%, #ebebeb), to(#efefef));
   background: linear-gradient(0deg, white 0%, #ebebeb 70%, #efefef 100%);
@@ -340,7 +339,7 @@
   z-index: 1;
 }
 
-.price-list-header, .gallery-header, .contact-header {
+.price-list-header {
   font-size: 4rem;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.5rem;
@@ -400,15 +399,30 @@
 }
 
 @media (min-width: 670px) {
-  .price-list-header-container, .gallery-header-container, .contact-header-container {
+  .price-list-header-container {
+    width: 100%;
+    background: white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(70%, #e6e6e6), to(#efefef));
+    background: linear-gradient(180deg, white 0%, #e6e6e6 70%, #efefef 100%);
+    position: relative;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 4em;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(70%, #ebebeb), to(#efefef));
+    background: linear-gradient(0deg, white 0%, #ebebeb 70%, #efefef 100%);
   }
   .price-list-container {
     width: 40%;
   }
-  .price-list-header, .gallery-header, .contact-header {
+  .price-list-header {
     margin: 0;
     border-bottom: none;
   }
@@ -421,13 +435,31 @@
 }
 
 .gallery-header-container {
-  background: white;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(70%, #ebebeb), to(#efefef));
+  background: linear-gradient(0deg, white 0%, #ebebeb 70%, #efefef 100%);
+  padding: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
   background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(70%, #e6e6e6), to(#efefef));
   background: linear-gradient(180deg, white 0%, #e6e6e6 70%, #efefef 100%);
 }
 
 .gallery-header {
-  text-align: center;
+  font-size: 4rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5rem;
+  border-bottom: 2px solid #d387ab;
+  margin: 0 auto;
 }
 
 .gallery-splash, .price-list-splash {
@@ -565,28 +597,28 @@
     background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(70%, #e6e6e6), to(#efefef));
     background: linear-gradient(180deg, white 0%, #e6e6e6 70%, #efefef 100%);
     position: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 4em;
     z-index: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   .gallery-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
-    padding: 4rem 0;
+    margin: 0;
+    border-bottom: none;
   }
   .gallery-splash, .price-list-splash {
     display: block;
+    height: 300px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
@@ -634,7 +666,7 @@
     position: relative;
     z-index: 500;
   }
-  .gallery-container .gallery-container-element {
+  .gallery-container-element {
     overflow: hidden;
     position: relative;
     -webkit-box-shadow: -1px 5px 31px -9px #42445a;
@@ -665,7 +697,30 @@
 }
 
 .contact-header-container {
-  padding: 8em 4em 4em 4em;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(70%, #ebebeb), to(#efefef));
+  background: linear-gradient(0deg, white 0%, #ebebeb 70%, #efefef 100%);
+  padding: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
+  padding-top: 8em;
+}
+
+.contact-header {
+  font-size: 4rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5rem;
+  border-bottom: 2px solid #d387ab;
+  margin: 0 auto;
 }
 
 .contact-splash {
@@ -689,31 +744,7 @@
   gap: 1.5rem;
 }
 
-.contact-container-mobile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 1rem;
-  gap: 2rem;
-  font-size: 1.3rem;
-}
-
-.contact-container-facebook {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 1rem;
-  gap: 2rem;
-  font-size: 1.3rem;
-}
-
-.contact-container-instagram {
+.contact-container-mobile, .contact-container-facebook, .contact-container-instagram {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -738,19 +769,38 @@
 @media (min-width: 670px) {
   .contact-splash {
     display: block;
+    height: 300px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
     pointer-events: none;
   }
   .contact-header-container {
+    width: 100%;
+    background: white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(70%, #e6e6e6), to(#efefef));
+    background: linear-gradient(180deg, white 0%, #e6e6e6 70%, #efefef 100%);
+    position: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 4em;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(70%, #ebebeb), to(#efefef));
+    background: linear-gradient(0deg, white 0%, #ebebeb 70%, #efefef 100%);
+  }
+  .contact-header {
+    margin: 0;
+    border-bottom: none;
   }
 }
 
@@ -805,6 +855,8 @@ html, body {
 }
 
 img {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -814,11 +866,9 @@ img {
 }
 
 img:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   opacity: 0.8;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
   position: relative;
   -webkit-filter: sepia(50%);
           filter: sepia(50%);

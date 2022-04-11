@@ -3,12 +3,12 @@
     background-color: #fff;
 
     &-header-container {
-        @extend .price-list-header-container;
-        padding: 8em 4em 4em 4em;
+        @include header-container-mobile;
+        padding-top: 8em;
     }
 
     &-header {
-        @extend .price-list-header;
+        @include header-mobile;
     }
 
     &-splash {
@@ -20,27 +20,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        // padding-top: 3em;
         padding-bottom: 4em;
         gap: 1.5rem;
 
-        &-mobile {
-            display: flex;
-            align-items: center;
-            padding: 0 1rem;
-            gap: 2rem;
-            font-size: 1.3rem;
-        }
-
-        &-facebook {
-            display: flex;
-            align-items: center;
-            padding: 0 1rem;
-            gap: 2rem;
-            font-size: 1.3rem;
-        }
-
-        &-instagram {
+        &-mobile, &-facebook, &-instagram {
             display: flex;
             align-items: center;
             padding: 0 1rem;
@@ -63,14 +46,18 @@
 
 @media (min-width: 670px) {
     .contact-splash {
-        display: block;
-        width: fit-content;
-        height: fit-content;
-        justify-content: left;
-        pointer-events: none;
+        @include header-splash;
     }
 
     .contact-header-container {
-        padding: 4em;
+        @include header-container-desktop;
+        background: linear-gradient(0deg, 
+        rgba(255,255,255,1) 0%, 
+        rgba(235,235,235,1) 70%, 
+        rgba(239,239,239,1) 100%);
+    }
+
+    .contact-header {
+        @include header-desktop;
     }
 }

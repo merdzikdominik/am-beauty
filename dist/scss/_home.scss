@@ -1,14 +1,17 @@
 .home {
     background-color: #efefef;
     width: 100%;
+    // min-height: 100vh;
     min-height: 100vh;
+    background-image: url('/dist/assets/img/hands-bg3.jpg');
+    background-position: unset;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     &-information {
         width: 100%;
         text-align: center;
         justify-content: center;
-        // position: relative;
-        // top: 8rem;
         z-index: 998;
         
         &-nails {
@@ -53,19 +56,19 @@
 }
 
 @media (min-width: 670px) {
-    .home {
-        width: 100%;
+    .home-information {
+        width: 70%;
         // height: 100vh;
-        min-height: 100vh;
-        background-image: url('/dist/assets/img/hands-bg3.jpg');
-        background-position: unset;
-        background-size: cover;
-        background-repeat: no-repeat;
+        // min-height: 100vh;
+        // background-image: url('/dist/assets/img/hands-bg3.jpg');
+        // background-position: unset;
+        // background-size: cover;
+        // background-repeat: no-repeat;
     }
 
     .home-information-description {
-        width: 70%;
-        // padding-right: 10em;
+        // width: 85%;
+        padding: 2em 3em 2em 2em;
     }
 
     .home-information-name {

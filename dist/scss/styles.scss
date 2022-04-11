@@ -20,25 +20,18 @@ header {
 
 html, body {
     overflow-x: hidden;
-    // scroll-behavior: smooth;
 }
 
 img {
-    // @include slowAnimation;
-    // position: relative;
+    @include slowAnimation;
     width: 100%;
     height: 100%;
-    // transition: all 0.3s ease-out;
     object-fit: cover;
     object-position: center;
 
     &:hover {
-        // @include slowAnimation;
+        @include slowAnimation;
         opacity: 0.8;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        margin: 0;
         position: relative;
         filter: sepia(50%);
         transform: scale(1.5);

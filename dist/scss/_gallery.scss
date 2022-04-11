@@ -4,10 +4,8 @@
     background-color: #efefef;
 
     &-header-container {
-        @extend .price-list-header-container;
-        // height: 100%;
-        // background-image: url('/dist/assets/svg/header-bar-gallery2.jpg');
-        background: rgb(255,255,255);
+        // @extend .price-list-header-container;
+        @include header-container-mobile;
         background: linear-gradient(180deg, 
         rgba(255,255,255,1) 0%, 
         rgba(230,230,230,1) 70%, 
@@ -15,10 +13,7 @@
     }
 
     &-header {
-        @extend .price-list-header;
-        text-align: center;
-        // padding: 2em 3em 0;
-        // padding: 1em 0;
+        @include header-mobile;
     }
 
     &-splash {
@@ -38,9 +33,6 @@
         grid-template-rows: repeat(10, 10%);
         gap: 0.5em;
         margin: 0;
-        // position: relative;
-        // z-index: 990;
-        // padding: 5em 0;
 
         &-element {
             overflow: hidden;
@@ -122,7 +114,6 @@
 @media (min-width: 670px) {
     .gallery-main-container {
         width: 60%;
-        // height: 100%;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -130,37 +121,15 @@
     }
 
     .gallery-header-container {
-        // @extend .price-list-header-container;
-        width: 100%;
-        // background-image: url('/dist/assets/svg/header-bar.jpg');
-        // background-size: cover;
-        // background-repeat: no-repeat;
-        background: rgb(255,255,255);
-        background: linear-gradient(180deg, 
-        rgba(255,255,255,1) 0%, 
-        rgba(230,230,230,1) 70%, 
-        rgba(239,239,239,1) 100%);
-        position: relative;
-        z-index: 1;
-        display: flex;
-        // justify-content: space-between;
-        // background-image: url('/dist/assets/svg/header-bar-gallery3.jpg');
+        @include header-container-desktop;
     }
 
     .gallery-header {
-        display: flex;
-        justify-content: right;
-        // align-items: center;
-        // align-items: right;
-        padding: 4rem 0;
+        @include header-desktop;
     }
 
     .gallery-splash {
-        display: block;
-        width: fit-content;
-        height: fit-content;
-        justify-content: left;
-        pointer-events: none;
+        @include header-splash;
     }
 
     .gallery-splash-background1, .gallery-splash-background2, .gallery-splash-background3 {
@@ -208,7 +177,7 @@
         position: relative;
         z-index: 500;
     
-        .gallery-container-element {
+        &-element {
             overflow: hidden;
             position: relative;
             -webkit-box-shadow: -1px 5px 31px -9px rgba(66, 68, 90, 1);
