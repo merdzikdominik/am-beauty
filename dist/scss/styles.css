@@ -11,9 +11,11 @@
 }
 
 .nav-container {
-  width: 80%;
+  width: 100%;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 1em 10em;
 }
 
 .mobile-menu {
@@ -26,7 +28,6 @@
   height: 100vh;
   padding-top: 20%;
   z-index: 0;
-  font-family: 'Poppins', sans-serif;
   visibility: hidden;
 }
 
@@ -103,7 +104,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Poppins', sans-serif;
   font-weight: bold;
 }
 
@@ -247,27 +247,25 @@
   background-color: #efefef;
   width: 100%;
   min-height: 100vh;
-  background-image: url("/dist/assets/img/hands-bg3.jpg");
-  background-position: unset;
-  background-size: cover;
-  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home-information {
   width: 100%;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   z-index: 998;
 }
 
 .home-information-nails {
   list-style-type: none;
-  font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
   padding: 0 0 0 2.4em;
-  text-align: left;
   line-height: 3rem;
 }
 
@@ -283,17 +281,17 @@
 }
 
 .home-information-name {
-  font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
-  text-align: left;
   padding: 4em 1em 0 1em;
 }
 
 .home-information-description {
-  font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
-  text-align: left;
   padding: 2em;
+}
+
+.home-hands {
+  display: none;
 }
 
 .horizontal-purple-line {
@@ -312,7 +310,15 @@
     padding: 2em 3em 2em 2em;
   }
   .home-information-name {
-    padding: 8em 0 0 1em;
+    padding: 4em 0 0 1em;
+  }
+  .home-hands {
+    display: block;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    pointer-events: none;
+    overflow: hidden;
   }
 }
 
@@ -339,9 +345,12 @@
   z-index: 1;
 }
 
+.price-list-splash, .gallery-splash, .contact-splash {
+  display: none;
+}
+
 .price-list-header {
   font-size: 4rem;
-  font-family: 'Poppins', sans-serif;
   letter-spacing: 0.5rem;
   border-bottom: 2px solid #d387ab;
   margin: 0 auto;
@@ -367,33 +376,31 @@
   background-color: black;
 }
 
-.price-list-container .nails-title {
-  font-family: 'Poppins', sans-serif;
+.nails-title {
   padding: 0 3em;
   text-align: center;
 }
 
-.price-list .list-element {
+.list-element {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
   padding: 1em 0;
 }
 
-.price-list .list-element-price {
+.list-element-price {
   font-weight: bold;
   white-space: nowrap;
   margin-bottom: 0;
   padding: 1em 0;
 }
 
-.price-list .list-element-service {
+.list-element-service {
   margin-bottom: 0;
   padding: 1em 0;
 }
@@ -401,7 +408,6 @@
 @media (min-width: 670px) {
   .price-list-header-container {
     width: 100%;
-    background: white;
     background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(70%, #e6e6e6), to(#efefef));
     background: linear-gradient(180deg, white 0%, #e6e6e6 70%, #efefef 100%);
     position: relative;
@@ -425,6 +431,17 @@
   .price-list-header {
     margin: 0;
     border-bottom: none;
+  }
+  .price-list-splash, .gallery-splash, .contact-splash {
+    display: block;
+    height: 300px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    pointer-events: none;
   }
 }
 
@@ -456,14 +473,9 @@
 
 .gallery-header {
   font-size: 4rem;
-  font-family: 'Poppins', sans-serif;
   letter-spacing: 0.5rem;
   border-bottom: 2px solid #d387ab;
   margin: 0 auto;
-}
-
-.gallery-splash, .price-list-splash {
-  display: none;
 }
 
 .gallery-main-container {
@@ -593,7 +605,6 @@
   }
   .gallery-header-container {
     width: 100%;
-    background: white;
     background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(70%, #e6e6e6), to(#efefef));
     background: linear-gradient(180deg, white 0%, #e6e6e6 70%, #efefef 100%);
     position: relative;
@@ -613,7 +624,7 @@
     margin: 0;
     border-bottom: none;
   }
-  .gallery-splash, .price-list-splash {
+  .gallery-splash {
     display: block;
     height: 300px;
     width: -webkit-fit-content;
@@ -677,17 +688,10 @@
   }
   .zoomed-pic {
     pointer-events: none;
-    width: 40%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
@@ -717,14 +721,9 @@
 
 .contact-header {
   font-size: 4rem;
-  font-family: 'Poppins', sans-serif;
   letter-spacing: 0.5rem;
   border-bottom: 2px solid #d387ab;
   margin: 0 auto;
-}
-
-.contact-splash {
-  display: none;
 }
 
 .contact-container {
@@ -758,11 +757,10 @@
 
 .fb, .ig, .mobile {
   color: black;
-  font-family: 'Poppins', sans-serif;
   text-decoration: none;
 }
 
-.fb:hover, .ig:hover, .mobile:hover {
+.fb:visited, .ig:visited, .mobile:visited {
   color: black;
 }
 
@@ -780,7 +778,6 @@
   }
   .contact-header-container {
     width: 100%;
-    background: white;
     background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(70%, #e6e6e6), to(#efefef));
     background: linear-gradient(180deg, white 0%, #e6e6e6 70%, #efefef 100%);
     position: relative;
@@ -834,7 +831,6 @@ iframe {
 .footer-content {
   text-align: center;
   font-size: 20px;
-  font-family: 'Poppins', sans-serif;
   color: black;
   padding: 1em 0;
 }
@@ -852,6 +848,8 @@ header {
 
 html, body {
   overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
 }
 
 img {

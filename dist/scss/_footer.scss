@@ -3,7 +3,6 @@
     background-color: #efefef;
 
     &-container {
-        // position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -12,7 +11,6 @@
     &-content {
         text-align: center;
         font-size: 20px;
-        font-family: 'Poppins', sans-serif;
         color: black;
         padding: 1em 0;
     }

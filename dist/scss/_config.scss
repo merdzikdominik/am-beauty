@@ -1,11 +1,13 @@
 //place for colors variables/functions/mixins/fonts
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+$underline-color: #d387ab;
+$primary-color: #efefef;
+$secondary-color: #fff;
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -26,7 +28,7 @@
         height: 2px;
         left: 50%;
         position: absolute;
-        background: #d387ab;
+        background: $underline-color;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
     }
@@ -39,7 +41,7 @@
 
 @mixin header-container-desktop {
     width: 100%;
-    background: rgb(255,255,255);
+    // background: rgb(255,255,255);
     background: linear-gradient(180deg, 
     rgba(255,255,255,1) 0%, 
     rgba(230,230,230,1) 70%, 
@@ -68,9 +70,8 @@
 
 @mixin header-mobile {
     font-size: 4rem;
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 0.5rem;
-    border-bottom: 2px solid #d387ab;
+    border-bottom: 2px solid $underline-color;
     margin: 0 auto;
 }
 

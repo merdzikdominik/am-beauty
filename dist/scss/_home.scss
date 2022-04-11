@@ -1,25 +1,24 @@
 .home {
-    background-color: #efefef;
+    background-color: $primary-color;
     width: 100%;
-    // min-height: 100vh;
     min-height: 100vh;
-    background-image: url('/dist/assets/img/hands-bg3.jpg');
-    background-position: unset;
-    background-size: cover;
-    background-repeat: no-repeat;
+    // background-image: url('/dist/assets/img/hands-bg3.jpg');
+    // background-position: unset;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    display: flex;
+    align-items: center;
 
     &-information {
         width: 100%;
-        text-align: center;
-        justify-content: center;
         z-index: 998;
         
         &-nails {
             list-style-type: none;
-            font-family: 'Poppins', sans-serif;
             font-size: 1.1rem;
             padding: 0 0 0 2.4em;
-            text-align: left;
             line-height: 3rem;
 
             &-type {
@@ -31,19 +30,18 @@
         }
 
         &-name {
-            // width: 90%;
-            font-family: 'Poppins', sans-serif;
             font-size: 2.5rem;
-            text-align: left;
             padding: 4em 1em 0 1em;
         }
 
         &-description {
-            font-family: 'Poppins', sans-serif;
             font-size: 1.3rem;
-            text-align: left;
             padding: 2em;
         }
+    }
+
+    &-hands {
+        display: none;
     }
 }
 
@@ -58,21 +56,28 @@
 @media (min-width: 670px) {
     .home-information {
         width: 70%;
-        // height: 100vh;
-        // min-height: 100vh;
-        // background-image: url('/dist/assets/img/hands-bg3.jpg');
-        // background-position: unset;
-        // background-size: cover;
-        // background-repeat: no-repeat;
     }
 
     .home-information-description {
-        // width: 85%;
         padding: 2em 3em 2em 2em;
     }
 
     .home-information-name {
-        padding: 8em 0 0 1em;
+        padding: 4em 0 0 1em;
     }
 
+    .home-hands {
+        display: block;
+        // width: fit-content;
+        // height: fit-content;
+        // width: 600px;
+        // padding: 0;
+        // margin: 0;
+        min-width: fit-content;
+        // max-height: fit-content;
+        // width: auto;
+        // height: auto;
+        pointer-events: none;
+        overflow: hidden;
+    }
 }

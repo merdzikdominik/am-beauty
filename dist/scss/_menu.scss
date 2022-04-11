@@ -1,7 +1,8 @@
 .nav-container {
-    width: 80%;
+    width: 100%;
+    backdrop-filter: blur(3px);
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 1em 10em;
 }
 
 .mobile-menu {
@@ -13,7 +14,6 @@
     height: 100vh;
     padding-top: 20%;
     z-index: 0;
-    font-family: 'Poppins', sans-serif;
     visibility: hidden;
 
     &-container {
@@ -36,11 +36,9 @@
         padding: 1rem 0;
         position: relative;
         display: none;
-        // visibility: hidden;
 
         &.active {
             display: block;
-            // visibility: visible;
             color: #fff;
             @include menuLinksHover;
         }
@@ -58,7 +56,6 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
     font-weight: bold;
 
     &-element-link {
@@ -79,7 +76,7 @@
     letter-spacing: 3px;
     font-size: 2.3em;
     font-weight: 700;
-    border-bottom: 2px solid #d387ab;
+    border-bottom: 2px solid $underline-color;
     text-align: center;
     text-decoration: none;
     color: black;

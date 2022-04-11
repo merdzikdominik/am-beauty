@@ -1,10 +1,9 @@
 .gallery {
     width: 100%;
     position: relative;
-    background-color: #efefef;
+    background-color: $primary-color;
 
     &-header-container {
-        // @extend .price-list-header-container;
         @include header-container-mobile;
         background: linear-gradient(180deg, 
         rgba(255,255,255,1) 0%, 
@@ -17,7 +16,7 @@
     }
 
     &-splash {
-        display: none;
+        @extend .price-list-splash;
     }
 
     &-main-container {
@@ -192,11 +191,8 @@
       
     .zoomed-pic {
         pointer-events: none;
-        width: 40%;
+        width: fit-content;
         margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }
 

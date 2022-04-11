@@ -12,7 +12,7 @@
     }
 
     &-splash {
-        display: none;
+        @extend .price-list-splash;
     }
 
     &-container {
@@ -35,10 +35,9 @@
 
 .fb, .ig, .mobile {
     color: black;
-    font-family: 'Poppins', sans-serif;
     text-decoration: none;
 
-    &:hover {
+    &:visited {
         color: black;
     }
 }
