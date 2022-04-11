@@ -2,10 +2,6 @@
     background-color: $primary-color;
     width: 100%;
     min-height: 100vh;
-    // background-image: url('/dist/assets/img/hands-bg3.jpg');
-    // background-position: unset;
-    // background-size: cover;
-    // background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
     text-align: left;
     display: flex;
@@ -68,15 +64,7 @@
 
     .home-hands {
         display: block;
-        // width: fit-content;
-        // height: fit-content;
-        // width: 600px;
-        // padding: 0;
-        // margin: 0;
-        min-width: fit-content;
-        // max-height: fit-content;
-        // width: auto;
-        // height: auto;
+        width: 900px;
         pointer-events: none;
         overflow: hidden;
     }

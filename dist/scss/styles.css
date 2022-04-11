@@ -314,9 +314,7 @@
   }
   .home-hands {
     display: block;
-    min-width: -webkit-fit-content;
-    min-width: -moz-fit-content;
-    min-width: fit-content;
+    width: 900px;
     pointer-events: none;
     overflow: hidden;
   }
