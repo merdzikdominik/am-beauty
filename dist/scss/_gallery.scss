@@ -141,8 +141,8 @@
     .gallery-splash-background1, .gallery-splash-background2, .gallery-splash-background3 {
         display: block;
         pointer-events: none;
-        width: 50%;
-        height: 50%;
+        width: 35%;
+        height: 35%;
         position: absolute;
         overflow: hidden;
     }
@@ -152,6 +152,8 @@
         right: -15%;
         transform: rotate(-45deg);
         opacity: 0.6;
+        width: 20%;
+        height: 20%;
     }
     
     .gallery-splash-background2 {
@@ -162,9 +164,9 @@
     }
     
     .gallery-splash-background3 {
-        top: 10%;
+        top: 5%;
         left: -20%;
-        transform: rotate(10deg);
+        transform: rotate(-10deg);
         opacity: 0.4;
     }
 
@@ -178,8 +180,6 @@
         z-index: 500;
     
         &-element {
-            // overflow: hidden;
-            // position: relative;
             -webkit-box-shadow: -1px 5px 31px -9px rgba(66, 68, 90, 1);
             -moz-box-shadow: -1px 5px 31px -9px rgba(66, 68, 90, 1);
             box-shadow: -1px 5px 31px -9px rgba(66, 68, 90, 1);
@@ -227,6 +227,36 @@
         justify-content: center;
         position: relative;
         z-index: 500;
+    }
+
+    .gallery-splash-background1, .gallery-splash-background2, .gallery-splash-background3 {
+        display: block;
+        pointer-events: none;
+        width: 40%;
+        height: 40%;
+        position: absolute;
+        overflow: hidden;
+    }
+    
+    .gallery-splash-background1 {
+        top: 30%;
+        right: -15%;
+        transform: rotate(-45deg);
+        opacity: 0.6;
+    }
+    
+    .gallery-splash-background2 {
+        top: 50%;
+        left: -15%;
+        transform: rotate(10deg);
+        opacity: 0.4;
+    }
+    
+    .gallery-splash-background3 {
+        top: 10%;
+        left: -20%;
+        transform: rotate(-10deg);
+        opacity: 0.4;
     }
 
     .nails3-grid-expand {

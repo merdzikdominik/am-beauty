@@ -7,17 +7,26 @@ menuBtn.addEventListener('click', () => {
     const menuBox = document.querySelector('.mobile-menu');
     const mobileLinks = document.querySelectorAll('.mobile-menu-element-link');
 
+    const removeMenuWhenClicked = (hamburgerParameter, menuBoxParameter) => {
+        hamburgerParameter.classList.remove('open');
+        menuBoxParameter.classList.remove('active');
+
+        click = false;
+    }
+
     if (!click) {
         hamburger.classList.add('open');
         menuBox.classList.add('active');
-        // mobileLinks.classList.add('active');
-        mobileLinks.forEach(link => link.classList.add('active'));
-
+        mobileLinks.forEach(link => {
+            link.classList.add('active');
+            link.addEventListener('click', () => {
+                removeMenuWhenClicked(hamburger, menuBox);
+            });
+    });
         click = true;
+
     } else {
-        hamburger.classList.remove('open');
-        menuBox.classList.remove('active');
-        // mobileLinks.classList.remove('active');
+        removeMenuWhenClicked(hamburger, menuBox);
         mobileLinks.forEach(link => link.classList.remove('active'));
         
         click = false;

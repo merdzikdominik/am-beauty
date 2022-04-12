@@ -245,6 +245,10 @@
 
 .home {
   background-color: #efefef;
+  background-image: url("/dist/assets/img/hands-mobile2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   width: 100%;
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
@@ -303,6 +307,9 @@
 }
 
 @media (min-width: 670px) {
+  .home {
+    background-image: none;
+  }
   .home-information {
     width: 70%;
   }
@@ -644,8 +651,8 @@
   .gallery-splash-background1, .gallery-splash-background2, .gallery-splash-background3 {
     display: block;
     pointer-events: none;
-    width: 50%;
-    height: 50%;
+    width: 35%;
+    height: 35%;
     position: absolute;
     overflow: hidden;
   }
@@ -655,6 +662,8 @@
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
     opacity: 0.6;
+    width: 20%;
+    height: 20%;
   }
   .gallery-splash-background2 {
     top: 50%;
@@ -664,10 +673,10 @@
     opacity: 0.4;
   }
   .gallery-splash-background3 {
-    top: 10%;
+    top: 5%;
     left: -20%;
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
     opacity: 0.4;
   }
   .gallery-container {
@@ -734,6 +743,35 @@
             justify-content: center;
     position: relative;
     z-index: 500;
+  }
+  .gallery-splash-background1, .gallery-splash-background2, .gallery-splash-background3 {
+    display: block;
+    pointer-events: none;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    overflow: hidden;
+  }
+  .gallery-splash-background1 {
+    top: 30%;
+    right: -15%;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    opacity: 0.6;
+  }
+  .gallery-splash-background2 {
+    top: 50%;
+    left: -15%;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    opacity: 0.4;
+  }
+  .gallery-splash-background3 {
+    top: 10%;
+    left: -20%;
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+    opacity: 0.4;
   }
   .nails3-grid-expand {
     -ms-grid-row: unset;
