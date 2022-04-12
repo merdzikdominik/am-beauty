@@ -37,6 +37,7 @@ img {
         position: relative;
         filter: sepia(50%);
         transform: scale(1.5);
+        overflow: hidden;
         cursor: pointer;
       }
 }
