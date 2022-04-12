@@ -7,9 +7,10 @@ menuBtn.addEventListener('click', () => {
     const menuBox = document.querySelector('.mobile-menu');
     const mobileLinks = document.querySelectorAll('.mobile-menu-element-link');
 
-    const removeMenuWhenClicked = (hamburgerParameter, menuBoxParameter) => {
+    const removeMenuWhenClicked = (hamburgerParameter, menuBoxParameter, mobileLinksParameter) => {
         hamburgerParameter.classList.remove('open');
         menuBoxParameter.classList.remove('active');
+        mobileLinksParameter.forEach(link => link.classList.remove('active'));
 
         click = false;
     }
@@ -20,14 +21,13 @@ menuBtn.addEventListener('click', () => {
         mobileLinks.forEach(link => {
             link.classList.add('active');
             link.addEventListener('click', () => {
-                removeMenuWhenClicked(hamburger, menuBox);
+                removeMenuWhenClicked(hamburger, menuBox, mobileLinks);
             });
     });
         click = true;
 
     } else {
-        removeMenuWhenClicked(hamburger, menuBox);
-        mobileLinks.forEach(link => link.classList.remove('active'));
+        removeMenuWhenClicked(hamburger, menuBox, mobileLinks);
         
         click = false;
     }

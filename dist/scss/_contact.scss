@@ -1,6 +1,6 @@
 .contact {
     width: 100%;
-    background-color: #fff;
+    background-color: $secondary-color;
 
     &-header-container {
         @include header-container-mobile;

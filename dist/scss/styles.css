@@ -245,7 +245,7 @@
 
 .home {
   background-color: #efefef;
-  background-image: url("/dist/assets/img/hands-mobile2.png");
+  background-image: url("/dist/assets/img/hands-mobile4.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -259,6 +259,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .home-information {
@@ -286,7 +289,7 @@
 
 .home-information-name {
   font-size: 2.5rem;
-  padding: 4em 1em 0 1em;
+  padding: 1em 1em 0 1em;
 }
 
 .home-information-description {

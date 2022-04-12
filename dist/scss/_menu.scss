@@ -39,7 +39,7 @@
 
         &.active {
             display: block;
-            color: #fff;
+            color: $secondary-color;
             @include menuLinksHover;
         }
     }
