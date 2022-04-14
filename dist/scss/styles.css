@@ -148,45 +148,6 @@
   cursor: pointer;
 }
 
-@media (min-width: 670px) {
-  .mobile-menu {
-    height: 0;
-    padding: 0;
-  }
-  .menu-btn {
-    display: none;
-  }
-  .desktop-menu {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .desktop-menu-element-link {
-    color: black;
-    font-size: 1.2rem;
-    text-decoration: none;
-    z-index: 999;
-    position: relative;
-    display: block;
-  }
-  .desktop-menu-element-link::after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: '';
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #d387ab;
-    -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  .desktop-menu-element-link:hover::after {
-    width: 100%;
-    left: 0;
-  }
-}
-
 .menu-btn {
   position: fixed;
   top: 1.5rem;
@@ -243,12 +204,47 @@
           transform: rotate(-45deg) translate(3px, -7px);
 }
 
+@media (min-width: 670px) {
+  .mobile-menu {
+    height: 0;
+    padding: 0;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .desktop-menu {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .desktop-menu-element-link {
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    z-index: 999;
+    position: relative;
+    display: block;
+  }
+  .desktop-menu-element-link::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #d387ab;
+    -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .desktop-menu-element-link:hover::after {
+    width: 100%;
+    left: 0;
+  }
+}
+
 .home {
   background-color: #efefef;
-  background-image: url("/dist/assets/img/hands-mobile3.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   width: 100%;
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
@@ -262,6 +258,20 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.home::before {
+  content: '';
+  background-image: url("/dist/assets/img/hands-mobile3-resized.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .home-information {
@@ -289,7 +299,7 @@
 
 .home-information-name {
   font-size: 2.5rem;
-  padding: 0 1em 0 1em;
+  padding: 2em 1em 0 1em;
 }
 
 .home-information-description {
@@ -307,11 +317,16 @@
   width: 10em;
   height: 0.2em;
   background-color: #d387ab;
+  border: none;
 }
 
 @media (min-width: 670px) {
   .home {
     background-image: none;
+  }
+  .home::before {
+    background-image: none;
+    opacity: 0;
   }
   .home-information {
     width: 70%;
@@ -542,7 +557,14 @@
   z-index: 999;
 }
 
-.zoomed-pic-hamburger-box .zoomed-pic-hamburger {
+.zoomed-pic-hamburger-box:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.zoomed-pic-hamburger {
   position: absolute;
   top: 0.8em;
   right: -2px;
@@ -551,7 +573,7 @@
   transition: all 0.3s ease-out;
 }
 
-.zoomed-pic-hamburger-box .zoomed-pic-hamburger::before {
+.zoomed-pic-hamburger::before {
   content: '';
   position: absolute;
   top: 0em;
@@ -563,7 +585,7 @@
           transform: rotate(45deg);
 }
 
-.zoomed-pic-hamburger-box .zoomed-pic-hamburger::after {
+.zoomed-pic-hamburger::after {
   content: '';
   position: absolute;
   top: 0em;
@@ -573,13 +595,6 @@
   background-color: black;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-}
-
-.zoomed-pic-hamburger-box:hover {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 .zoomed-pic {
@@ -595,6 +610,15 @@
       -ms-flex-pack: center;
           justify-content: center;
   pointer-events: none;
+}
+
+.zoomed-pic-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 @media (min-width: 670px) {

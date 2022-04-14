@@ -68,11 +68,11 @@ const displayPhoto = (galleryParameter, imageNameParameter, backgroundHtmlNodePa
 }
 
 const hidePhoto = (backgroundHtmlNodeParameter) => {
-    const hamburger = document.querySelector('.zoomed-pic-hamburger');
+    const behindPicturesScreen = document.querySelector('.behind-picture-screen');
 
-    hamburger.addEventListener('click', () => {
+    behindPicturesScreen.addEventListener('click', () => {
         backgroundHtmlNodeParameter.remove();
-    })
+    });
 }
 
 // animations on scroll

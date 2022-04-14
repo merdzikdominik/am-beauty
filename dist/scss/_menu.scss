@@ -88,31 +88,6 @@
     cursor: pointer;
 }
 
-@media (min-width: 670px) {
-    .mobile-menu {
-        height: 0;
-        padding: 0;
-    }
-
-    .menu-btn {
-        display: none;
-    }
-
-    .desktop-menu {
-        justify-content: space-around;
-    }
-
-    .desktop-menu-element-link {
-        color: black;
-        font-size: 1.2rem;
-        text-decoration: none;
-        z-index: 999;
-        position: relative;
-        display: block;
-        @include menuLinksHover;
-    }
-}
-
 .menu-btn {
     position: fixed;
     top: 1.5rem;
@@ -162,5 +137,30 @@
                 transform: rotate(-45deg) translate(3px, -7px);
             }
         }
+    }
+}
+
+@media (min-width: 670px) {
+    .mobile-menu {
+        height: 0;
+        padding: 0;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .desktop-menu {
+        justify-content: space-around;
+    }
+
+    .desktop-menu-element-link {
+        color: black;
+        font-size: 1.2rem;
+        text-decoration: none;
+        z-index: 999;
+        position: relative;
+        display: block;
+        @include menuLinksHover;
     }
 }
