@@ -509,9 +509,9 @@
 .gallery-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (10%)[10];
+  -ms-grid-rows: (10%);
       grid-template-rows: repeat(10, 10%);
   gap: 0.5em;
   margin: 0;
@@ -710,9 +710,9 @@
     display: -ms-grid;
     display: grid;
     padding: 0;
-    -ms-grid-columns: (300px)[3];
+    -ms-grid-columns: (300px);
         grid-template-columns: repeat(3, 300px);
-    -ms-grid-rows: (300px)[7];
+    -ms-grid-rows: (300px);
         grid-template-rows: repeat(7, 300px);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -761,9 +761,9 @@
     display: -ms-grid;
     display: grid;
     padding: 0;
-    -ms-grid-columns: (300px)[4];
+    -ms-grid-columns: (300px);
         grid-template-columns: repeat(4, 300px);
-    -ms-grid-rows: (300px)[5];
+    -ms-grid-rows: (300px);
         grid-template-rows: repeat(5, 300px);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
