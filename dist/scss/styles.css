@@ -262,9 +262,9 @@
 
 .home::before {
   content: '';
-  background-image: url("/dist/assets/img/hands-mobile3-resized.png");
+  background-image: url("/dist/assets/img/hands-mobile5.png");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: right bottom;
   background-size: cover;
   opacity: 0.4;
   position: absolute;
@@ -400,7 +400,7 @@
 }
 
 .nails-title {
-  padding: 0 3em;
+  padding: 0 1em;
   text-align: center;
 }
 

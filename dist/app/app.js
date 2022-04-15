@@ -23,7 +23,8 @@ menuBtn.addEventListener('click', () => {
             link.addEventListener('click', () => {
                 removeMenuWhenClicked(hamburger, menuBox, mobileLinks);
             });
-    });
+        });
+        
         click = true;
 
     } else {
