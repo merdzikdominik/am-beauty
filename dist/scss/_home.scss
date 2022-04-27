@@ -1,0 +1,96 @@
+.home {
+    background-color: $primary-color;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+        content: '';
+        background-image: url('../assets/img/hands-mobile5.png');
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: cover;
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    &-information {
+        width: 100%;
+        z-index: 998;
+        
+        &-nails {
+            list-style-type: none;
+            font-size: 1.1rem;
+            padding: 0 0 0 2.4em;
+            line-height: 3rem;
+
+            &-type {
+                display: flex;
+                align-items: center;
+                gap: 1em;
+                word-wrap: nowrap;
+            }
+        }
+
+        &-name {
+            font-size: 2.5rem;
+            padding: 2em 1em 0 1em;
+        }
+
+        &-description {
+            font-size: 1.3rem;
+            padding: 2em;
+        }
+    }
+
+    &-hands {
+        display: none;
+    }
+}
+
+.horizontal-purple-line {
+    position: relative;
+    left: 2.6em;
+    width: 10em;
+    height: 0.2em;
+    background-color: $underline-color;
+    border: none;
+}
+
+@media (min-width: 670px) {
+    .home {
+        background-image: none;
+
+        &::before {
+            background-image: none;
+            opacity: 0;
+        }
+    }
+
+    .home-information {
+        width: 70%;
+    }
+
+    .home-information-description {
+        padding: 2em 3em 2em 2em;
+    }
+
+    .home-information-name {
+        padding: 4em 0 0 1em;
+    }
+
+    .home-hands {
+        display: block;
+        width: 900px;
+        pointer-events: none;
+        overflow: hidden;
+    }
+}
