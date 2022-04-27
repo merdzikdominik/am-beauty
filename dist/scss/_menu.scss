@@ -1,0 +1,166 @@
+.nav-container {
+    width: 100%;
+    backdrop-filter: blur(3px);
+    margin: 0 auto;
+    padding: 1em 10%;
+}
+
+.mobile-menu {
+    width: 100%;
+    @include slowAnimation;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding-top: 20%;
+    z-index: 0;
+    visibility: hidden;
+
+    &-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &-element-link {
+        color: black;
+        font-size: 2rem;
+        text-decoration: none;
+        padding: 1rem 0;
+        position: relative;
+        display: none;
+
+        &.active {
+            display: block;
+            color: $secondary-color;
+            @include menuLinksHover;
+        }
+    }
+
+    &.active {
+        background-color: rgba(135, 134, 131, 0.9);
+        visibility: visible;
+        @include slowAnimation;
+    }
+}
+
+.desktop-menu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+
+    &-element-link {
+        display: none;
+    }
+}
+
+.logo-container {
+    display: flex;
+    width: 233px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 999;
+}
+
+.logo {
+    letter-spacing: 3px;
+    font-size: 2.3em;
+    font-weight: 700;
+    border-bottom: 2px solid $underline-color;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alex Brush', cursive;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 1.5rem;
+    right: 1rem;
+    width: 28px;
+    height: 30px;
+    z-index: 999;
+    cursor: pointer;
+
+    &-burger {
+        position: absolute;
+        right: 0;
+        top: 0.5rem;
+        width: 28px;
+        height: 3px;
+        background-color: black;
+        @include slowAnimation;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            width: 28px;
+            height: 3px;
+            background-color: black;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            width: 28px;
+            height: 3px;
+            background-color: black;
+        }
+
+        &.open {
+            transform: rotate(360deg);
+            background-color: transparent;
+
+            &::before {
+                transform: rotate(45deg) translate(5px, 8px);
+            }
+
+            &::after {
+                width: 28px;
+                transform: rotate(-45deg) translate(3px, -7px);
+            }
+        }
+    }
+}
+
+@media (min-width: 670px) {
+    .mobile-menu {
+        height: 0;
+        padding: 0;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .desktop-menu {
+        justify-content: space-around;
+    }
+
+    .desktop-menu-element-link {
+        color: black;
+        font-size: 1.2rem;
+        text-decoration: none;
+        z-index: 999;
+        position: relative;
+        display: block;
+        @include menuLinksHover;
+    }
+}
