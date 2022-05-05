@@ -18,27 +18,27 @@
             <div class="mobile-menu">
                 <div class="mobile-menu-container">
                     <div class="mobile-menu-links">
-                        <a href="javascript:void(0)" data-link="price-list" class="mobile-menu-element-link">Cennik</a>
-                        <a href="javascript:void(0)" data-link="gallery" class="mobile-menu-element-link">Galeria</a>
-                        <a href="javascript:void(0)" data-link="contact" class="mobile-menu-element-link">Kontakt</a>
-                        <a href="javascript:void(0)" data-link="location" class="mobile-menu-element-link">Lokalizacja</a>
+                        <a href="#price-list" data-link="price-list" class="mobile-menu-element-link">Cennik</a>
+                        <a href="#gallery" data-link="gallery" class="mobile-menu-element-link">Galeria</a>
+                        <a href="#contact" data-link="contact" class="mobile-menu-element-link">Kontakt</a>
+                        <a href="#location" data-link="location" class="mobile-menu-element-link">Lokalizacja</a>
 
                     </div>
                 </div>
             </div>
             <div class="desktop-menu">
-                <a href="javascript:void(0)" data-link="price-list" class="desktop-menu-element-link">Cennik</a>
-                <a href="javascript:void(0)" data-link="gallery" class="desktop-menu-element-link">Galeria</a>
-                <div class="logo-container">
-                    <a href="javascript:void" data-link="home" class="logo">A.M. Beauty</a>
+                <a href="#price-list" data-link="price-list" class="desktop-menu-element-link">Cennik</a>
+                <a href="#gallery" data-link="gallery" class="desktop-menu-element-link">Galeria</a>
+                <div id="logo-container" class="logo-container">
+                    <a href="#home" data-link="home" class="logo">A.M. Beauty</a>
                 </div>
-                <a href="javascript:void(0)" data-link="contact" class="desktop-menu-element-link">Kontakt</a>
-                <a href="javascript:void(0)" data-link="location" class="desktop-menu-element-link">Lokalizacja</a>
+                <a href="#contact" data-link="contact" class="desktop-menu-element-link">Kontakt</a>
+                <a href="#location" data-link="location" class="desktop-menu-element-link">Lokalizacja</a>
             </div>
         </nav>
     </header>
 
-    <section class="home">
+    <section id="home" class="home">
         <div class="home-information">
             <h1 class="home-information-name">A.M. Beauty Studio Brwi & Paznokci</h1>
             <p class="home-information-description">A.M. Beauty Studio Brwi i Paznokci zaprasza na makijaż permanentny brwi, hennę brwi, depilację woskiem oraz stylizację paznokci w trzech rodzajach:</p>
@@ -61,7 +61,7 @@
         <img class="home-hands" src="./assets/img/hands-transparent2.png" alt="crossed-hands">
     </section>
 
-    <section class="price-list">
+    <section id="price-list" class="price-list">
         <header class="price-list-header-container">
             <h1 class="price-list-header">Cennik</h1>
             <img class="price-list-splash" src="./assets/svg/polish-nail-splash.png" alt="price-list-splash">
@@ -215,7 +215,7 @@
         </div>
     </section>
 
-    <section class="gallery">
+    <section id="gallery" class="gallery">
         <header class="gallery-header-container">
             <img class="gallery-splash" src="./assets/svg/polish-nail-splash.png" alt="gallery-splash">
             <h1 class="gallery-header">Galeria</h1>
@@ -289,7 +289,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <header class="contact-header-container">
             <h1 class="contact-header">Kontakt</h1>
             <img class="contact-splash" src="./assets/svg/polish-nail-splash.png" alt="contact-splash">
@@ -310,7 +310,7 @@
         </div>
     </section>
 
-    <section class="location">
+    <section id="location" class="location">
         <div class="mapouter">
             <div class="gmap_canvas">
                 <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=opolska%205%20tarnowskie%20g%C3%B3ry&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
@@ -326,4 +326,3 @@
     <script src="https://kit.fontawesome.com/50fbcf7093.js" crossorigin="anonymous"></script>
     <script src="app/app.js"></script>
 </body>
-</html>
