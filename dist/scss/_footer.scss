@@ -1,0 +1,17 @@
+.footer {
+    width: 100%;
+    background-color: #efefef;
+
+    &-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-content {
+        text-align: center;
+        font-size: 20px;
+        color: black;
+        padding: 1em 0;
+    }
+}
